@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipment Rentals in Maine | Maine Equipment Rentals</title>
+  <meta name="description" content="Heavy Equipment Rentals in Manchester and Hermon, ME. Fast delivery across all of Maine & New Hampshire. Excavators, Skid Steers, Tractors, Aerial Lifts, Dozers, Compactors, and Attachments." />
+  <link rel="icon" type="image/png" href="/images/maineequipmentrentals-logo-black.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- TOP HEADER BAR -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="header-logoLink" data-nav="/" aria-label="Maine Equipment Rentals is a Heavy Equipment dealer in Manchester and Hermon, ME">
+        <img
+          src="/images/maineequipmentrentals-logo-white.png"
+          alt="Maine Equipment Rentals"
+          class="header-logo"
+        />
+      </a>
+
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <!-- MAIN NAVIGATION -->
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/" class="nav-link" data-nav="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/inventory" class="nav-link" data-nav="/inventory">
+              Rentals <span class="nav-caret">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/inventory" data-nav="/inventory">Rental Equipment</a></li>
+              <li><a href="/why-rent" data-nav="/why-rent">Rental Department</a></li>
+              <li><a href="/reserve" data-nav="/reserve">Rental Reservation Inquiry</a></li>
+              <li><a href="/price-sheet" data-nav="/price-sheet">Interactive Price Sheet</a></li>
+              <li><a href="/fckimages/pdf/New-Upgraded-Price-list-7-27-2026.pdf" target="_blank" rel="noopener">Download Price Sheet (PDF)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link" data-nav="/contact">
+              Contact <span class="nav-caret">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/contact" data-nav="/contact">Contact Us</a></li>
+              <li><a href="/about" data-nav="/about">About Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/locations" class="nav-link" data-nav="/locations">
+              Locations <span class="nav-caret">⌄</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/locations" data-nav="/locations">Locations</a></li>
+              <li><a href="/locations/manchester" data-nav="/locations/manchester">Manchester</a></li>
+              <li><a href="/locations/hermon" data-nav="/locations/hermon">Hermon</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/careers" class="nav-link" data-nav="/careers">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a href="/fckimages/pdf/New-Upgraded-Price-list-7-27-2026.pdf" target="_blank" rel="noopener" class="nav-link nav-link--highlight">
+              Price Sheet
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- BRANCH PHONE NUMBERS & SOCIALS -->
+      <div class="header-contacts">
+        <div class="branch-contact">
+          <a href="tel:2076212160" class="branch-phone" id="hdr-manchester-phone">207.621.2160</a>
+          <div class="branch-meta">
+            <span>Manchester, <abbr title="Maine">ME</abbr> 04351</span>
+            <span class="branch-divider">|</span>
+            <a href="/locations/manchester" data-nav="/locations/manchester" class="branch-map-link">
+              <span aria-hidden="true">📍</span> MAP
+            </a>
+          </div>
+        </div>
+
+        <div class="branch-contact">
+          <a href="tel:2076050320" class="branch-phone" id="hdr-hermon-phone">207.605.0320</a>
+          <div class="branch-meta">
+            <span>Hermon, <abbr title="Maine">ME</abbr> 04401</span>
+            <span class="branch-divider">|</span>
+            <a href="/locations/hermon" data-nav="/locations/hermon" class="branch-map-link">
+              <span aria-hidden="true">📍</span> MAP
+            </a>
+          </div>
+        </div>
+
+        <div class="header-socials">
+          <a
+            href="https://www.facebook.com/maineequipmentrentals"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-circle social-circle--fb"
+            aria-label="Maine Equipment Rentals on Facebook"
+            title="Maine Equipment Rentals on Facebook"
+          >f</a>
+          <a
+            href="https://www.instagram.com/maineequipmentrentals?igsh=cm51bzR4Mmh1OGZu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-circle social-circle--ig"
+            aria-label="Maine Equipment Rentals on Instagram"
+            title="Maine Equipment Rentals on Instagram"
+          >◎</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN APPLICATION VIEWPORT -->
+  <main id="app-root" role="main"></main>
+
+  <!-- GET A QUOTE / CHECK AVAILABILITY MODAL (<dialog>) -->
+  <dialog id="lead-modal" class="mer-modal" aria-labelledby="lead-modal-title">
+    <div class="modal-header">
+      <h3 id="lead-modal-title">Get A Quote</h3>
+      <button type="button" class="modal-close-btn" id="lead-modal-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body" id="lead-modal-body"></div>
+  </dialog>
+
+  <!-- ADMIN EQUIPMENT EDITOR MODAL (<dialog>) -->
+  <dialog id="admin-eq-modal" class="mer-modal" aria-labelledby="admin-eq-modal-title">
+    <div class="modal-header">
+      <h3 id="admin-eq-modal-title">Edit Equipment</h3>
+      <button type="button" class="modal-close-btn" id="admin-eq-modal-close" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-body" id="admin-eq-modal-body"></div>
+  </dialog>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>Manchester</h2>
+        <div class="footer-address">
+          22 Range Way<br />
+          Manchester, <abbr title="Maine">ME</abbr> 04351
+        </div>
+        <a href="tel:2076212160" class="footer-phone-link">207.621.2160</a>
+        <a href="/locations/manchester" data-nav="/locations/manchester" class="branch-map-link">📍 Map &amp; Directions</a>
+      </div>
+
+      <div class="footer-col">
+        <h2>Hermon</h2>
+        <div class="footer-address">
+          21 Freedom Pkwy<br />
+          Hermon, <abbr title="Maine">ME</abbr> 04401
+        </div>
+        <a href="tel:2076050320" class="footer-phone-link">207.605.0320</a>
+        <a href="/locations/hermon" data-nav="/locations/hermon" class="branch-map-link">📍 Map &amp; Directions</a>
+      </div>
+
+      <div class="footer-col">
+        <h2>Dealer Links</h2>
+        <ul class="footer-links-list">
+          <li><a href="/inventory" data-nav="/inventory">Rentals</a></li>
+          <li><a href="/locations" data-nav="/locations">Locations</a></li>
+          <li><a href="/about" data-nav="/about">About Us</a></li>
+          <li><a href="/contact" data-nav="/contact">Contact Us</a></li>
+          <li><a href="/careers" data-nav="/careers">Careers</a></li>
+          <li><a href="/why-rent" data-nav="/why-rent">Why Rent</a></li>
+          <li><a href="/reserve" data-nav="/reserve">Reserve Online</a></li>
+          <li><a href="/fckimages/pdf/New-Upgraded-Price-list-7-27-2026.pdf" target="_blank" rel="noopener">Price Sheet</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Store Hours</h2>
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Monday</td><td>7:00 AM - 5:00 PM</td></tr>
+            <tr><td>Tuesday</td><td>7:00 AM - 5:00 PM</td></tr>
+            <tr><td>Wednesday</td><td>7:00 AM - 5:00 PM</td></tr>
+            <tr><td>Thursday</td><td>7:00 AM - 5:00 PM</td></tr>
+            <tr><td>Friday</td><td>7:00 AM - 5:00 PM</td></tr>
+            <tr><td>Saturday</td><td>7:00 AM - 11:00 AM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-legal-links">
+        <a href="/privacy-policy" data-nav="/privacy-policy">Privacy Policy</a>
+        <span>|</span>
+        <a href="/privacy-request" data-nav="/privacy-request">Privacy Request</a>
+        <span>|</span>
+        <a href="/terms" data-nav="/terms">Terms</a>
+        <span>|</span>
+        <a href="/accessibility" data-nav="/accessibility">Accessibility</a>
+        <span>|</span>
+        <a href="/sitemap" data-nav="/sitemap">Site Map</a>
+        <span>|</span>
+        <a href="/admin" data-nav="/admin" style="color: #eab308; font-weight: 700;">Admin Portal</a>
+      </div>
+      <div>
+        Copyright &copy; 2026 Maine Equipment Rentals | Hosted on Cloudflare | All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

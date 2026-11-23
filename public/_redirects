@@ -1,0 +1,5 @@
+# Legacy DealerSpike URLs -> Clean SEO URLs (SPA handles both directly, or redirects cleanly)
+/fckimages/MER%20Rental%20Price%20Sheet.pdf /fckimages/pdf/New-Upgraded-Price-list-7-27-2026.pdf 302
+
+# Single-Page Application fallback for clean URLs and legacy DealerSpike routes
+/* /index.html 200

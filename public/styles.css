@@ -1,0 +1,1660 @@
+/* Maine Equipment Rentals (MER) — Stylesheet
+   Cloned & modernized from maineequipmentrentals.com (DealerSpike) */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+  --mer-black: #0c0d0d;
+  --mer-pure-black: #000000;
+  --mer-dark: #1a1c1e;
+  --mer-charcoal: #2b2b2b;
+  --mer-grey-dark: #474747;
+  --mer-grey-mid: #777777;
+  --mer-grey-border: #dddddd;
+  --mer-grey-light: #ebebeb;
+  --mer-grey-bg: #f5f5f5;
+  --mer-red: #b10000;
+  --mer-red-hover: #8a0000;
+  --mer-yellow: #ffde00;
+  --mer-navy: #0b3254;
+  --mer-fb: #3b5998;
+  --mer-ig: #c13584;
+  --mer-white: #ffffff;
+  --font-heading: 'Roboto Condensed', 'Oswald', 'Arial Narrow', Arial, Helvetica, sans-serif;
+  --font-body: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  color: #222222;
+  background-color: var(--mer-white);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* =========================================================
+   HEADER & NAVIGATION (Exact DealerSpike MER Black Top Bar)
+   ========================================================= */
+.site-header {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.header-logoLink {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  height: 76px;
+  width: auto;
+  display: block;
+}
+
+/* Main Desktop Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 14px;
+  color: var(--mer-white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.nav-link:hover,
+.nav-item:hover > .nav-link,
+.nav-link.active {
+  border-bottom-color: var(--mer-white);
+  color: #f0f0f0;
+}
+
+.nav-link--highlight {
+  background-color: var(--mer-red);
+  border-radius: 2px;
+  padding: 8px 14px;
+  border-bottom: none !important;
+  margin-left: 4px;
+}
+
+.nav-link--highlight:hover {
+  background-color: var(--mer-red-hover);
+}
+
+.nav-caret {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background-color: #4a4a4a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  display: none;
+  z-index: 1100;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 11px 18px;
+  color: var(--mer-white);
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.15s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #333333;
+  color: var(--mer-yellow);
+}
+
+/* Header Right Branch Phone Numbers & Social Icons */
+.header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.branch-contact {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.branch-phone {
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--mer-white);
+  letter-spacing: 0.5px;
+  transition: color 0.15s ease;
+}
+
+.branch-phone:hover {
+  color: var(--mer-red);
+}
+
+.branch-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: #e0e0e0;
+  margin-top: 3px;
+}
+
+.branch-divider {
+  color: #555;
+}
+
+.branch-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 700;
+  color: var(--mer-white);
+  text-transform: uppercase;
+}
+
+.branch-map-link:hover {
+  color: var(--mer-yellow);
+}
+
+.header-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.social-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mer-white);
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.social-circle:hover {
+  transform: scale(1.08);
+  opacity: 0.92;
+}
+
+.social-circle--fb {
+  background-color: var(--mer-fb);
+}
+
+.social-circle--ig {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-color: var(--mer-ig);
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid #444;
+  color: var(--mer-white);
+  padding: 8px 12px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* =========================================================
+   HOMEPAGE HERO BANNER & SEARCH BAR
+   ========================================================= */
+.hero-section {
+  position: relative;
+  min-height: 490px;
+  background-color: #1b1f24;
+  background-image: url('https://www.maineequipmentrentals.com/images/slideshow/Main-SlideShow/maineequipmentrentals-bg-video.jpg'), url('/images/hero-yard-aerial.svg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 95px;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.42) 60%, rgba(0,0,0,0.58) 100%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 980px;
+}
+
+.hero-title {
+  margin: 0 0 28px;
+  color: var(--mer-white);
+  font-family: 'Oswald', var(--font-heading);
+  font-size: clamp(38px, 6.2vw, 76px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+}
+
+.hero-search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  background: rgba(12, 13, 13, 0.78);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+.hero-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--mer-white);
+  padding: 16px 26px;
+  font-size: 18px;
+  outline: none;
+}
+
+.hero-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-search-btn {
+  background: transparent;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--mer-white);
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.hero-search-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--mer-yellow);
+}
+
+/* =========================================================
+   35 CATEGORY TILES GRID (.index-ctas)
+   ========================================================= */
+.index-ctas-wrapper {
+  background-color: #555555;
+  padding: 0 0 24px;
+}
+
+.index-ctas {
+  max-width: 1320px;
+  margin: -45px auto 0;
+  position: relative;
+  z-index: 5;
+  padding: 4px;
+  background-color: #555555;
+}
+
+.index-ctas-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+}
+
+.cta-tile {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+  background-color: #2b2b2b;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.cta-tile-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.35s ease;
+}
+
+.cta-tile:hover .cta-tile-bg {
+  transform: scale(1.07);
+}
+
+.cta-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.82) 100%);
+  pointer-events: none;
+}
+
+.cta-tile-text {
+  position: relative;
+  z-index: 2;
+  padding: 14px 10px;
+  width: 100%;
+  color: var(--mer-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-first-line {
+  font-size: 15px;
+  font-weight: 400;
+  color: #e5e5e5;
+  margin-bottom: 2px;
+}
+
+.cta-second-line {
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 1.15;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+.cta-tile:hover .cta-second-line {
+  color: var(--mer-yellow);
+}
+
+/* =========================================================
+   BRAND PARTNER SHOWCASE BAR
+   ========================================================= */
+.brands-section {
+  background-color: var(--mer-white);
+  padding: 36px 24px;
+  border-bottom: 1px solid var(--mer-grey-border);
+}
+
+.brands-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.brands-heading {
+  text-align: center;
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--mer-grey-dark);
+  letter-spacing: 1px;
+  margin: 0 0 22px;
+}
+
+.brands-track {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 14px;
+  align-items: center;
+}
+
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--mer-white);
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  height: 68px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border-color: var(--mer-black);
+}
+
+.brand-card img {
+  max-width: 100%;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+/* =========================================================
+   WELCOME SECTION (HOMEPAGE)
+   ========================================================= */
+.welcome-section {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  padding: 64px 24px;
+  text-align: center;
+  border-top: 4px solid var(--mer-red);
+}
+
+.welcome-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.welcome-h1 {
+  font-family: 'Oswald', var(--font-heading);
+  font-size: clamp(32px, 4.5vw, 48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  letter-spacing: 1px;
+}
+
+.welcome-subtitle {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  color: var(--mer-yellow);
+  font-weight: 700;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.welcome-body {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #e5e5e5;
+  margin: 0 0 32px;
+}
+
+.welcome-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border: 2px solid var(--mer-white);
+  padding: 13px 34px;
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary-dark:hover {
+  background-color: var(--mer-red);
+  border-color: var(--mer-red);
+  color: var(--mer-white);
+}
+
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--mer-red);
+  color: var(--mer-white);
+  border: 2px solid var(--mer-red);
+  padding: 13px 34px;
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.btn-red:hover {
+  background-color: var(--mer-red-hover);
+  border-color: var(--mer-red-hover);
+}
+
+/* =========================================================
+   RENTAL INVENTORY CATALOG PAGE (Matches step_34_media_0.png)
+   ========================================================= */
+.page-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  width: 100%;
+  flex: 1;
+}
+
+.catalog-header h1 {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 0 12px;
+}
+
+.catalog-intro {
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: #222222;
+  margin: 0 0 24px;
+}
+
+.catalog-intro a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Filter Toolbar */
+.filter-panel {
+  background-color: var(--mer-white);
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+}
+
+.filter-row-top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto auto;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.filter-search-group {
+  display: flex;
+  border: 1px solid #cccccc;
+}
+
+.filter-search-group input {
+  flex: 1;
+  border: none;
+  padding: 9px 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.filter-search-group button {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.filter-sort-group {
+  display: flex;
+  gap: 6px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #cccccc;
+  background-color: var(--mer-white);
+  font-size: 15px;
+  color: #222222;
+}
+
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14.5px;
+  color: #222;
+}
+
+.page-arrow-btn {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border: none;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.page-arrow-btn:disabled {
+  background-color: #777777;
+  cursor: not-allowed;
+}
+
+.filter-actions-group {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-filter-dark {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border: none;
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-filter-dark:hover {
+  background-color: #333333;
+}
+
+.filter-row-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.filter-row-more {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.filter-row-more.expanded {
+  display: grid;
+}
+
+/* Active filter pills */
+.active-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.filter-pill button {
+  background: none;
+  border: none;
+  color: var(--mer-yellow);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Equipment Unit Row Card (Exact match to DealerSpike unit card in step_34) */
+.inventory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.unit-card {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.unit-media-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.unit-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  display: block;
+}
+
+.unit-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.unit-img-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.unit-badge-new {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--mer-red);
+  color: var(--mer-white);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+.unit-badge-branch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(12, 13, 13, 0.85);
+  color: var(--mer-white);
+  font-weight: 700;
+  font-size: 11.5px;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.unit-more-info-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--mer-grey-light);
+  color: #666666;
+  padding: 11px 14px;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.unit-more-info-bar:hover {
+  background-color: #dcdcdc;
+  color: #111111;
+}
+
+.info-icon-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #888888;
+  color: var(--mer-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Unit Main Details & Right Rate Column */
+.unit-main-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.unit-top-split {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 20px;
+}
+
+.unit-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 0 14px;
+}
+
+.unit-title a:hover {
+  color: var(--mer-red);
+}
+
+.unit-summary-specs {
+  font-size: 14.5px;
+  color: #111111;
+  margin: 0 0 16px;
+  font-weight: 500;
+}
+
+.unit-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 5px 24px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.spec-pair {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 6px;
+}
+
+.spec-label {
+  font-weight: 700;
+  color: #111111;
+}
+
+.spec-val {
+  color: #333333;
+}
+
+/* Right Price Stack (Daily / Weekly / Weekend / Monthly) */
+.unit-rates-col {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.click-quote-link {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-weight: 500;
+}
+
+.click-quote-link:hover {
+  color: var(--mer-red);
+  text-decoration: underline;
+}
+
+.rate-line {
+  font-size: 18px;
+  color: #111111;
+  line-height: 1.42;
+  font-weight: 400;
+}
+
+.unit-brand-badge {
+  margin-top: 14px;
+  font-family: 'Oswald', var(--font-heading);
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--mer-navy);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* Bottom 4-Button Action Bar on Each Card */
+.unit-actions-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #e6e6e6;
+  margin-top: 12px;
+}
+
+.unit-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 13px 16px;
+  border: none;
+  border-right: 1px solid #cccccc;
+  background-color: #e6e6e6;
+  color: #111111;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.unit-action-btn:hover {
+  background-color: #d4d4d4;
+}
+
+.unit-action-btn--primary {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border-right: none;
+}
+
+.unit-action-btn--primary:hover {
+  background-color: var(--mer-red);
+}
+
+/* =========================================================
+   EQUIPMENT DETAIL PAGE (Matches step_49_media_0.png)
+   ========================================================= */
+.detail-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #e6e6e6;
+  color: #333333;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.detail-back-btn:hover {
+  background-color: #d4d4d4;
+}
+
+.detail-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.detail-header-row h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.detail-subspecs {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 24px;
+}
+
+.detail-main-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.detail-photo-box {
+  border: 1px solid #ddd;
+  background: #f8fafc;
+}
+
+.detail-photo-box img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-cta-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-price-headline {
+  font-size: 26px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.detail-price-headline strong {
+  color: #111;
+  font-weight: 500;
+}
+
+.detail-rates-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.detail-rate-card {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: 3px solid var(--mer-black);
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.detail-rate-card span {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+
+.detail-rate-card strong {
+  display: block;
+  font-size: 20px;
+  color: #111;
+  margin-top: 4px;
+}
+
+.detail-stack-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  color: #111111;
+  padding: 15px 18px;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.detail-stack-btn:hover {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+}
+
+.detail-tabs {
+  display: flex;
+  gap: 4px;
+  margin-top: 36px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.detail-tab-btn {
+  background-color: #ebebeb;
+  border: none;
+  padding: 14px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.detail-tab-btn.active {
+  background-color: #dcdcdc;
+  border-bottom: 3px solid var(--mer-black);
+}
+
+.detail-tab-panel {
+  background-color: #f2f2f2;
+  padding: 24px;
+}
+
+.detail-spec-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-spec-table tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.detail-spec-table th,
+.detail-spec-table td {
+  padding: 11px 14px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.detail-spec-table th {
+  width: 240px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* =========================================================
+   INTERIOR PAGES & FORMS (Contact, Why Rent, About, Locations, Careers)
+   ========================================================= */
+.interior-page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 36px 24px 72px;
+}
+
+.interior-h1 {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.interior-h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  margin: 28px 0 14px;
+}
+
+.interior-p {
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #222222;
+  margin: 0 0 18px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.benefits-list li {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.benefits-list li::before {
+  content: "▸ ";
+  font-weight: 700;
+  color: var(--mer-black);
+}
+
+/* Standard DealerSpike Form Layout (Matches step_51_media_0.png) */
+.ds-form-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.ds-required-note {
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.ds-form-group {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.ds-input,
+.ds-select,
+.ds-textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  color: #222222;
+  background-color: var(--mer-white);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.ds-input:focus,
+.ds-select:focus,
+.ds-textarea:focus {
+  border-color: var(--mer-black);
+}
+
+.ds-required-star {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  font-weight: 700;
+  color: #111;
+  pointer-events: none;
+}
+
+.ds-form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ds-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 22px;
+  font-size: 14.5px;
+}
+
+.ds-submit-wrap {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.ds-submit-btn {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  border: none;
+  min-width: 260px;
+  padding: 16px 36px;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.ds-submit-btn:hover {
+  background-color: var(--mer-red);
+}
+
+/* Locations Cards (Matches step_67_media_0.png) */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin: 28px 0 36px;
+}
+
+.location-card {
+  background: var(--mer-white);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.location-card-header {
+  background-color: #474747;
+  color: var(--mer-white);
+  text-align: center;
+  padding: 13px 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.location-card-body {
+  padding: 22px;
+}
+
+/* =========================================================
+   QUOTE / AVAILABILITY MODAL (<dialog>)
+   ========================================================= */
+dialog.mer-modal {
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  width: calc(100vw - 32px);
+  max-width: 640px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  background: var(--mer-white);
+  color: #111;
+}
+
+dialog.mer-modal::backdrop {
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(2px);
+}
+
+.modal-header {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  color: var(--mer-white);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 22px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* =========================================================
+   ADMIN DASHBOARD (/admin)
+   ========================================================= */
+.admin-bar {
+  background: #1e293b;
+  color: #fff;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 3px solid var(--mer-red);
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.admin-tab {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-tab.active {
+  background: var(--mer-red);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 14px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.admin-table th {
+  background: #f1f5f9;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #475569;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-New { background: #fee2e2; color: #991b1b; }
+.status-Contacted { background: #fef3c7; color: #92400e; }
+.status-Quoted { background: #dbeafe; color: #1e40af; }
+.status-Booked { background: #dcfce7; color: #166534; }
+.status-Available { background: #dcfce7; color: #166534; }
+
+/* =========================================================
+   FOOTER (Exact 4-Column Black Footer)
+   ========================================================= */
+.site-footer {
+  background-color: var(--mer-black);
+  color: var(--mer-white);
+  padding: 54px 24px 28px;
+  margin-top: auto;
+}
+
+.footer-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #262626;
+}
+
+.footer-col h2 {
+  font-family: 'Oswald', var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin: 0 0 16px;
+  letter-spacing: 0.8px;
+}
+
+.footer-address {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+}
+
+.footer-phone-link {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--mer-white);
+  margin-bottom: 6px;
+}
+
+.footer-phone-link:hover {
+  color: var(--mer-red);
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.footer-links-list a:hover {
+  color: var(--mer-yellow);
+  text-decoration: underline;
+}
+
+.hours-table {
+  width: 100%;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--mer-white);
+}
+
+.hours-table td:first-child {
+  font-weight: 700;
+  color: var(--mer-white);
+  padding-right: 12px;
+}
+
+.footer-bottom {
+  max-width: 1320px;
+  margin: 24px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  font-size: 13.5px;
+  color: #999999;
+}
+
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-legal-links a:hover {
+  color: var(--mer-white);
+}
+
+/* =========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================= */
+@media (max-width: 1180px) {
+  .index-ctas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header-contacts {
+    gap: 14px;
+  }
+  .branch-phone {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+  .main-nav {
+    display: none;
+    width: 100%;
+    order: 4;
+    background: #181818;
+    padding: 12px;
+  }
+  .main-nav.open {
+    display: block;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dropdown-menu {
+    position: static;
+    display: block;
+    background: #252525;
+    box-shadow: none;
+    padding-left: 14px;
+  }
+  .filter-row-top,
+  .filter-row-dropdowns,
+  .unit-card,
+  .unit-top-split,
+  .detail-main-grid,
+  .locations-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .unit-rates-col {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .unit-actions-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .index-ctas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .unit-actions-bar {
+    grid-template-columns: 1fr;
+  }
+}

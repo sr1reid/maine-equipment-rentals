@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cbg_18" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="55%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ov_18" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="340" fill="url(#cbg_18)"/>
+  <path d="M0 220 Q150 200 310 215 T520 205 L520 340 L0 340 Z" fill="#1e293b"/>
+  <g transform="translate(0, -15)">
+    
+        <!-- Chassis & Wheels -->
+        <rect x="95" y="235" width="160" height="32" rx="6" fill="#0284c7" stroke="#111" stroke-width="2.5"/>
+        <circle cx="125" cy="268" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/>
+        <circle cx="225" cy="268" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/>
+        <!-- Telescopic Boom & Aerial Platform -->
+        <path d="M125 235 L355 95 L370 112 L145 245 Z" fill="#0284c7" stroke="#111" stroke-width="2.5"/>
+        <rect x="350" y="65" width="75" height="48" rx="4" fill="none" stroke="#1f2937" stroke-width="4"/>
+        <line x1="350" y1="88" x2="425" y2="88" stroke="#0284c7" stroke-width="4"/>
+        
+  </g>
+  <rect width="520" height="340" fill="url(#ov_18)"/>
+</svg>

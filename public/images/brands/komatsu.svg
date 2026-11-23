@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 90" width="260" height="90">
+  <rect x="2" y="2" width="256" height="86" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="2" y="76" width="256" height="12" rx="2" fill="#0b3254"/>
+  <text x="130" y="48" text-anchor="middle" fill="#111111" font-family="'Roboto Condensed', 'Oswald', Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="1.2">KOMATSU</text>
+</svg>

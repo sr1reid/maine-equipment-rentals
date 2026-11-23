@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="35%" stop-color="#4a607a"/>
+      <stop offset="100%" stop-color="#1e242b"/>
+    </linearGradient>
+    <linearGradient id="yard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a3d40"/>
+      <stop offset="50%" stop-color="#2a2d30"/>
+      <stop offset="100%" stop-color="#1b1d1f"/>
+    </linearGradient>
+    <pattern id="gravel" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#2f3235"/>
+      <circle cx="10" cy="10" r="1.5" fill="#3f4347"/>
+      <circle cx="28" cy="22" r="1.2" fill="#222528"/>
+      <circle cx="18" cy="34" r="1.4" fill="#45494e"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="720" fill="url(#sky)"/>
+  <!-- Pine treeline & Maine hills -->
+  <path d="M0 210 Q250 165 520 195 T1080 180 T1600 205 L1600 300 L0 300 Z" fill="#233127"/>
+  <!-- Equipment Yard Ground -->
+  <polygon points="0,240 1600,210 1600,720 0,720" fill="url(#gravel)"/>
+  <!-- MER Dark Metal Dealership Building on Top Left -->
+  <g transform="translate(70, 140)">
+    <polygon points="0,45 340,25 365,65 25,85" fill="#262930" stroke="#15171c" stroke-width="2"/>
+    <rect x="25" y="65" width="340" height="75" fill="#1c1f24" stroke="#111"/>
+    <rect x="145" y="75" width="55" height="22" fill="#0c0d0d" stroke="#fff" stroke-width="1.5"/>
+    <text x="172" y="91" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-weight="900" font-size="13">MER</text>
+    <rect x="55" y="95" width="45" height="30" fill="#334155"/>
+    <rect x="120" y="95" width="45" height="30" fill="#334155"/>
+    <rect x="210" y="95" width="45" height="30" fill="#334155"/>
+    <rect x="280" y="95" width="45" height="30" fill="#334155"/>
+  </g>
+  <!-- Rows of Yellow Excavators & Boom Lifts in Yard -->
+  <g opacity="0.92">
+    <!-- Row 1 Excavators -->
+    <g transform="translate(220, 310)">
+      <rect x="0" y="30" width="75" height="22" rx="6" fill="#1a1a1a"/>
+      <rect x="8" y="5" width="58" height="28" rx="4" fill="#f5b800"/>
+      <rect x="22" y="-12" width="28" height="22" rx="3" fill="#222"/>
+      <path d="M62 15 L105 -25 L125 10 L115 20 L100 -8 L66 25 Z" fill="#f5b800"/>
+    </g>
+    <g transform="translate(360, 310)">
+      <rect x="0" y="30" width="75" height="22" rx="6" fill="#1a1a1a"/>
+      <rect x="8" y="5" width="58" height="28" rx="4" fill="#f5b800"/>
+      <rect x="22" y="-12" width="28" height="22" rx="3" fill="#222"/>
+      <path d="M62 15 L105 -25 L125 10 L115 20 L100 -8 L66 25 Z" fill="#f5b800"/>
+    </g>
+    <g transform="translate(500, 310)">
+      <rect x="0" y="30" width="75" height="22" rx="6" fill="#1a1a1a"/>
+      <rect x="8" y="5" width="58" height="28" rx="4" fill="#f5b800"/>
+      <rect x="22" y="-12" width="28" height="22" rx="3" fill="#222"/>
+      <path d="M62 15 L105 -25 L125 10 L115 20 L100 -8 L66 25 Z" fill="#f5b800"/>
+    </g>
+    <g transform="translate(640, 310)">
+      <rect x="0" y="30" width="75" height="22" rx="6" fill="#1a1a1a"/>
+      <rect x="8" y="5" width="58" height="28" rx="4" fill="#f5b800"/>
+      <rect x="22" y="-12" width="28" height="22" rx="3" fill="#222"/>
+      <path d="M62 15 L105 -25 L125 10 L115 20 L100 -8 L66 25 Z" fill="#f5b800"/>
+    </g>
+    <!-- Red TYM Tractors on Left -->
+    <g transform="translate(95, 420)">
+      <circle cx="18" cy="40" r="16" fill="#111"/>
+      <circle cx="65" cy="44" r="12" fill="#111"/>
+      <rect x="15" y="12" width="52" height="24" rx="4" fill="#d11919"/>
+      <rect x="20" y="-12" width="6" height="26" fill="#111"/>
+      <path d="M65 20 L98 32 L108 46 L88 48 L65 28 Z" fill="#222"/>
+    </g>
+    <g transform="translate(195, 435)">
+      <circle cx="18" cy="40" r="16" fill="#111"/>
+      <circle cx="65" cy="44" r="12" fill="#111"/>
+      <rect x="15" y="12" width="52" height="24" rx="4" fill="#d11919"/>
+      <rect x="20" y="-12" width="6" height="26" fill="#111"/>
+      <path d="M65 20 L98 32 L108 46 L88 48 L65 28 Z" fill="#222"/>
+    </g>
+    <!-- Boom Lifts on Right (Yellow & Nifty Green) -->
+    <g transform="translate(920, 290)">
+      <rect x="0" y="140" width="90" height="20" rx="5" fill="#222"/>
+      <line x1="25" y1="140" x2="140" y2="-30" stroke="#f5b800" stroke-width="14"/>
+      <rect x="125" y="-50" width="38" height="24" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    </g>
+    <g transform="translate(1060, 310)">
+      <rect x="0" y="140" width="90" height="20" rx="5" fill="#222"/>
+      <line x1="25" y1="140" x2="140" y2="-30" stroke="#52b700" stroke-width="14"/>
+      <rect x="125" y="-50" width="38" height="24" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    </g>
+    <g transform="translate(1200, 330)">
+      <rect x="0" y="140" width="90" height="20" rx="5" fill="#222"/>
+      <line x1="25" y1="140" x2="140" y2="-30" stroke="#f5b800" stroke-width="14"/>
+      <rect x="125" y="-50" width="38" height="24" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+    </g>
+  </g>
+  <!-- MER Road Sign on Bottom Right -->
+  <g transform="translate(1330, 450) rotate(4)">
+    <rect x="0" y="0" width="165" height="64" rx="3" fill="#0c0d0d" stroke="#ffffff" stroke-width="2"/>
+    <image href="/images/maineequipmentrentals-logo-white.png" x="3" y="3" width="159" height="58" preserveAspectRatio="xMidYMid meet"/>
+    <rect x="72" y="64" width="20" height="55" fill="#111"/>
+  </g>
+  <!-- Dark Vignette Overlay so white text and search bar pop cleanly -->
+  <rect width="1600" height="720" fill="rgba(0,0,0,0.38)"/>
+</svg>

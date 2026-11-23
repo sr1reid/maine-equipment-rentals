@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cbg_14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="55%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ov_14" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="340" fill="url(#cbg_14)"/>
+  <path d="M0 220 Q150 200 310 215 T520 205 L520 340 L0 340 Z" fill="#1e293b"/>
+  <g transform="translate(0, -15)">
+    
+        <!-- Trailer Frame & Deck -->
+        <rect x="85" y="225" width="290" height="22" fill="#334155" stroke="#111" stroke-width="2.5"/>
+        <rect x="115" y="185" width="255" height="40" fill="#1e293b" opacity="0.85" stroke="#111" stroke-width="2"/>
+        <path d="M85 235 L45 255 L85 255 Z" fill="#1f2937"/>
+        <circle cx="215" cy="258" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/><circle cx="215" cy="258" r="10" fill="#cbd5e1"/>
+        <circle cx="270" cy="258" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/><circle cx="270" cy="258" r="10" fill="#cbd5e1"/>
+        <!-- Loading Ramps -->
+        <line x1="375" y1="225" x2="425" y2="275" stroke="#1f2937" stroke-width="8"/>
+        
+  </g>
+  <rect width="520" height="340" fill="url(#ov_14)"/>
+</svg>

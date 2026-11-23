@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="cbg_35" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="55%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="ov_35" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.1"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="340" fill="url(#cbg_35)"/>
+  <path d="M0 220 Q150 200 310 215 T520 205 L520 340 L0 340 Z" fill="#1e293b"/>
+  <g transform="translate(0, -15)">
+    
+        <!-- Compact Loader / Heavy Equipment -->
+        <rect x="125" y="235" width="195" height="42" rx="18" fill="#1f2937" stroke="#111" stroke-width="3"/>
+        <circle cx="155" cy="256" r="14" fill="#6b7280"/><circle cx="220" cy="256" r="14" fill="#6b7280"/><circle cx="285" cy="256" r="14" fill="#6b7280"/>
+        <rect x="135" y="145" width="145" height="90" rx="8" fill="#dc2626" stroke="#111" stroke-width="2.5"/>
+        <rect x="195" y="155" width="72" height="58" rx="4" fill="#1e293b"/>
+        <path d="M275 175 L365 235 L350 250 L265 190 Z" fill="#dc2626" stroke="#111" stroke-width="2.5"/>
+        <polygon points="355,220 420,220 435,275 355,275" fill="#374151" stroke="#111" stroke-width="2.5"/>
+        
+  </g>
+  <rect width="520" height="340" fill="url(#ov_35)"/>
+</svg>

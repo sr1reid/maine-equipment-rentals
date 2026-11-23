@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360">
+  <defs>
+    <linearGradient id="sky_29" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" fill="url(#sky_29)"/>
+  <!-- Maine Yard Background Horizon -->
+  <path d="M0 245 Q130 225 280 240 T520 235 L520 280 L0 280 Z" fill="#cbd5e1"/>
+  <rect x="0" y="272" width="520" height="88" fill="#94a3b8"/>
+  <!-- Top MER Yard Badge -->
+  <rect x="16" y="16" width="84" height="30" rx="3" fill="#0c0d0d" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="58" y="36" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="1">MER</text>
+  <!-- Category Pill -->
+  <rect x="112" y="18" width="180" height="26" rx="13" fill="#0c0d0d" opacity="0.82"/>
+  <text x="202" y="35" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="11" letter-spacing="0.8">TRAILERS</text>
+  <!-- Machine Graphic -->
+  
+        <!-- Trailer Frame & Deck -->
+        <rect x="85" y="225" width="290" height="22" fill="#e2e8f0" stroke="#111" stroke-width="2.5"/>
+        <rect x="115" y="185" width="255" height="40" fill="#005596" opacity="0.85" stroke="#111" stroke-width="2"/>
+        <path d="M85 235 L45 255 L85 255 Z" fill="#1f2937"/>
+        <circle cx="215" cy="258" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/><circle cx="215" cy="258" r="10" fill="#cbd5e1"/>
+        <circle cx="270" cy="258" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/><circle cx="270" cy="258" r="10" fill="#cbd5e1"/>
+        <!-- Loading Ramps -->
+        <line x1="375" y1="225" x2="425" y2="275" stroke="#1f2937" stroke-width="8"/>
+        
+  <!-- Bottom Spec Banner -->
+  <rect x="0" y="312" width="520" height="48" fill="#0c0d0d"/>
+  <text x="20" y="341" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="16">Ideal Cargo 7x14 Enclosed Contractor</text>
+  <rect x="380" y="320" width="124" height="32" rx="3" fill="#b10000"/>
+  <text x="442" y="341" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="14">$110/DAY</text>
+</svg>

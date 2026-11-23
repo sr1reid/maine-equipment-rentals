@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360">
+  <defs>
+    <linearGradient id="sky_19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" fill="url(#sky_19)"/>
+  <!-- Maine Yard Background Horizon -->
+  <path d="M0 245 Q130 225 280 240 T520 235 L520 280 L0 280 Z" fill="#cbd5e1"/>
+  <rect x="0" y="272" width="520" height="88" fill="#94a3b8"/>
+  <!-- Top MER Yard Badge -->
+  <rect x="16" y="16" width="84" height="30" rx="3" fill="#0c0d0d" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="58" y="36" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="900" font-size="18" letter-spacing="1">MER</text>
+  <!-- Category Pill -->
+  <rect x="112" y="18" width="180" height="26" rx="13" fill="#0c0d0d" opacity="0.82"/>
+  <text x="202" y="35" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="11" letter-spacing="0.8">ROUGH TERRIAN SCISSOR LI</text>
+  <!-- Machine Graphic -->
+  
+        <!-- Chassis & Wheels -->
+        <rect x="95" y="235" width="160" height="32" rx="6" fill="#0066b2" stroke="#111" stroke-width="2.5"/>
+        <circle cx="125" cy="268" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/>
+        <circle cx="225" cy="268" r="22" fill="#1f2937" stroke="#111" stroke-width="3"/>
+        <!-- Telescopic Boom & Aerial Platform -->
+        <path d="M125 235 L355 95 L370 112 L145 245 Z" fill="#0066b2" stroke="#111" stroke-width="2.5"/>
+        <rect x="350" y="65" width="75" height="48" rx="4" fill="none" stroke="#1f2937" stroke-width="4"/>
+        <line x1="350" y1="88" x2="425" y2="88" stroke="#0066b2" stroke-width="4"/>
+        
+  <!-- Bottom Spec Banner -->
+  <rect x="0" y="312" width="520" height="48" fill="#0c0d0d"/>
+  <text x="20" y="341" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="16">Genie GS-3369 RT Rough Terrain Sciss</text>
+  <rect x="380" y="320" width="124" height="32" rx="3" fill="#b10000"/>
+  <text x="442" y="341" text-anchor="middle" fill="#ffffff" font-family="'Roboto Condensed', Arial, sans-serif" font-weight="700" font-size="14">$245/DAY</text>
+</svg>

@@ -1,0 +1,15 @@
+name = "maine-equipment-rentals"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "public"
+
+# Bind your Cloudflare D1 Database:
+# Run: npx wrangler d1 create maine-equipment-rentals-db
+# Then paste the returned database_id below:
+[[d1_databases]]
+binding = "DB"
+database_name = "maine-equipment-rentals-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+[vars]
+NOTIFICATION_FROM_EMAIL = "Maine Equipment Rentals <notifications@maineequipmentrentals.com>"
+# Optional: Add RESEND_API_KEY via `npx wrangler pages secret put RESEND_API_KEY` for instant email notifications
